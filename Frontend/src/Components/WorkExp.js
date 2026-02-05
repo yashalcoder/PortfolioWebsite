@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 const experience = [
   { year: "2023-2024", company: "Snow Dream Studio", position: "Front-End Developer" },
-  { year: "2022-2023", company: "Tech Hub", position: "UI/UX Designer" },
-  { year: "2021-2022", company: "Code Factory", position: "Junior Developer" },
+  { year: "june-august 2025", company: "Tech Hub", position: "MERN stack developer" },
+  
 ];
 export default function WorkExp() {
   // Repeat the experience array multiple times to fill the reel
