@@ -7,61 +7,113 @@ import SDS from "../images/SDS.svg"
 import fast from "../images/fastLogo.png"
 import freelance from "../images/freelance.png";
 import coursera from "../images/coursera.png"
-import { Link } from "lucide-react";
-const ServicesPage=()=>{
-      const services=[
-        {img:front,sname:"Front-End Development"},
-        {img:back,sname:"Backend Development"},
-        {img:back,sname:"Programming Assignments (C++)"},
-        {img:back,sname:"Linux Tasks"},
-     
-    ]
-    const s=[
-        {img:SDS,company:"Snow Dream Studio june-july 2023",mname:"React Developer",viewLink:"https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss"},
-        {img:fast,company:"FAST National University August2024-January2025" ,mname:"Teacher Assistant (Object Oriented Programming)",viewLink:"https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss"},
-        {img:freelance,company:"Freelance Work june2025-present",mname:"Linux & Python ",viewLink:"https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss"},
-         {img:coursera,company:"Coursera courses january2023-Feb2023",mname:"Front-end course",viewLink:"https://www.coursera.org/account/accomplishments/verify/5BZDP267CP3H"},
 
+const ServicesPage = () => {
+    const services = [
+        { img: front, sname: "Front-End Development" },
+        { img: back, sname: "Backend Development" },
+        { img: back, sname: "Programming Assignments (C++)" },
+        { img: back, sname: "Linux Tasks" },
     ]
-    return (<>
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4 mb-10  mx-4 md:mx-12 lg:mx-24">
-        <div className="col-span-1 h-fit lg:sticky top-0   rounded-xl bg-white text-black dark:bg-black  pb-4 dark:text-white">
-            <Info/>
-        </div>
-        <div className="lg:col-span-2  rounded-lg  p-8 h-full overflow-y-auto bg-white text-black dark:bg-black   dark:text-white">
-            <div className="flex justify-between">
-                 <h1 className="font-bold text-4xl">Services I <span className="text-blue-700 font-extrabold">Offered</span></h1>
-                <a href="/contact"><div className="rounded-md p-2 font-medium bg-gray-200 dark:bg-gray-900 text-blue-700 cursor-pointer transition-all duration-300 hover:scale-105 "><h1>Avaialable for Hire</h1></div></a>
-            </div> 
-              <p className="font-bold text-gray-400 pt-6 w-[65%]">Transforming Ideas into Innovative Reality, Elevate Your Vision with Our <span className="text-black dark:text-white">Expert  Development Services!</span></p>
-            <div className="grid grid-cols-2 lg:grid-cols-4 p-2 gap-7 pt-10 text-black dark:text-white">
-                {services.map((data,index)=>(
-                  <div key={index} className="bg-gray-200 p-5 text-center dark:bg-gray-900 rounded-lg ">
-                    <div className='bg-black rounded-lg p-6 mb-2'>
-                    <img src={data.img} className=" "/> 
+    
+    const s = [
+        { img: SDS, company: "Snow Dream Studio", date: "June-July 2023", mname: "React Developer", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
+        { img: fast, company: "Freelance", date: "june25-august", mname: "Teacher Assistant (Object Oriented Programming)", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
+        { img: freelance, company: "Freelance Work", date: "June 2025-Present", mname: "Linux & Python", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
+        { img: coursera, company: "Coursera Courses", date: "January 2023-Feb 2023", mname: "Front-end Course", viewLink: "https://www.coursera.org/account/accomplishments/verify/5BZDP267CP3H" },
+    ]
+    
+    return (
+        <>
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4 mb-10 mx-4 md:mx-12 lg:mx-24">
+                <div className="col-span-1 h-fit lg:sticky top-0 rounded-xl bg-white text-black dark:bg-black dark:text-white border border-white/20 pb-4 dark:text-white">
+                    <Info />
+                </div>
+                
+                <div className="lg:col-span-2 rounded-2xl p-8 h-full overflow-y-auto bg-white text-black dark:bg-black dark:text-white border border-white/20 dark:text-white">
+                    
+                    {/* Header Section */}
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+                        <h1 className="font-bold text-4xl md:text-5xl font-poppins">
+                            Services I <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Offered</span>
+                        </h1>
+                        <a href="/contact">
+                            <div className="rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-purple-500 to-pink-500 text-white cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                <h1>Available for Hire</h1>
+                            </div>
+                        </a>
                     </div>
-                    {/* <img src={data.img} className=" bg-white p-5 dark:bg-black rounded-lg "/> */}
-                    <h1 className="">{data.sname}</h1>
-                 </div>
-                ))}
-              </div>
-            <h1 className="font-bold text-3xl ">Awards and Recognition</h1>
-            {s.map((data,index)=>(
-               <div className="bg-gray-200 dark:bg-gray-700 grid grid-cols-1 lg:grid-cols-3 p-2 mt-5 rounded-lg dark:hover:bg-gray-900 dark:hover:border border-black" key={index}>
-                <div className="flex gap-5 ">
-                    <img src={data.img} className="w-8 h-11"/>
-                    <h1>{data.company}</h1>
-                </div>
-                <div className="font-bold text-center m-4">
-                    <h1>{data.mname}</h1>
-                </div>
-                <div className="m-4 justify-end text-white bg-black p-2 w-32 text-center rounded-lg hover:translate-x-5">
-                    <a href={data.viewLink}>View project</a>
+                    
+                    <p className="text-base md:text-lg dark:text-white/70 text-gray-700 mb-12 leading-relaxed">
+                        Transforming Ideas into Innovative Reality. Elevate Your Vision with 
+                        <span className="font-semibold dark:text-white text-gray-900"> Expert Development Services!</span>
+                    </p>
+                    
+                    {/* Services Grid */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                        {services.map((data, index) => (
+                            <div 
+                                key={index} 
+                                className="bg-white/10 dark:bg-white/5 backdrop-blur-sm p-6 text-center rounded-2xl border border-white/20 hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300 hover:scale-105 group"
+                            >
+                                <div className='bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl p-4 mb-4 flex items-center justify-center group-hover:shadow-lg transition-all duration-300'>
+                                    <img src={data.img} className="w-12 h-12 object-contain" alt={data.sname} />
+                                </div>
+                                <h1 className="text-sm font-medium dark:text-white/90 text-gray-800">{data.sname}</h1>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    {/* Experience Section */}
+                    <h1 className="font-bold text-3xl md:text-4xl mb-8 font-poppins">
+                        Experience & <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Recognition</span>
+                    </h1>
+                    
+                    <div className="space-y-4">
+                        {s.map((data, index) => (
+                            <div 
+                                key={index} 
+                                className="bg-white/10 dark:bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300 overflow-hidden group"
+                            >
+                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-6 items-center">
+                                    
+                                    {/* Company Info */}
+                                    <div className="flex items-center gap-4">
+                                        <div className="w-14 h-14 bg-white/20 dark:bg-white/10 rounded-xl p-2 flex items-center justify-center flex-shrink-0">
+                                            <img src={data.img} className="w-full h-full object-contain" alt={data.company} />
+                                        </div>
+                                        <div>
+                                            <h2 className="font-semibold dark:text-white text-gray-800">{data.company}</h2>
+                                            <p className="text-sm dark:text-white/60 text-gray-600">{data.date}</p>
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Role */}
+                                    <div className="lg:text-center">
+                                        <h3 className="font-semibold text-purple-400">{data.mname}</h3>
+                                    </div>
+                                    
+                                    {/* View Button */}
+                                    {/* <div className="lg:flex lg:justify-end">
+                                        <a 
+                                            href={data.viewLink} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="inline-block"
+                                        >
+                                            <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2.5 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg text-center">
+                                                View Project →
+                                            </div>
+                                        </a>
+                                    </div> */}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-            ))}
-        </div>
-    </div>
-    </>)
+        </>
+    )
 }
+
 export default ServicesPage;

@@ -29,7 +29,7 @@ export default function Navbar() {
     {id:0,mname:"Home",img:LucideHome,link:"/"},
     {id:1,mname:"About",img:ContactIcon,link:"/About"},
     {id:2,mname:"Services",img:StarIcon,link:"/servicespage"},
-    {id:3,mname:"Works",img:WormIcon,link:"#"},
+    {id:3,mname:"Works",img:WormIcon,link:"/work"},
     {id:4,mname:"Contact us",img: MessageSquareIcon,link:"/contact"},
   ]
   const toggleNavbar=()=>{
@@ -65,18 +65,18 @@ export default function Navbar() {
             initial={{ y: -60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7 }}
-            className=" hidden lg:flex gap-1"
+            className=" hidden lg:flex gap-2"
           >
             {menulist.map((data, index) => (
-              <a
+              <NavLink
                 key={data.id}
-                href={data.link}
-                className={`${isactive === data.id ? "bg-gray-200 text-black dark dark:hover:bg-gray-900 dark:hover:text-white" : ""} flex gap-2 transition duration-200 text-gray-500 p-3 font-poppins py-1 hover:bg-gray-200 hover:text-black my-2 rounded-lg dark:hover:bg-gray-900 dark:hover:text-white text-md`}
+                to={data.link}
+                className={`${isactive === data.id ? "bg-gray-200 text-black dark dark:hover:bg-gray-900 dark:hover:text-white" : ""} flex gap-1 transition duration-200 text-gray-500 p-2 font-poppins py-1 hover:bg-gray-200 hover:text-black my-2 rounded-lg dark:hover:bg-gray-900 dark:hover:text-white text-md`}
                 onClick={() => setIsActive(data.id)}
               >
                 <data.img />
                 {data.mname}
-              </a>
+              </NavLink>
             ))}
           </motion.nav>
 
@@ -126,7 +126,7 @@ export default function Navbar() {
          <div className="flex gap-6 p-4">
           <NavLink 
             to="/contact" 
-            className="text-lg flex items-center gap-2 px-6 py-2 text-white bg-gray-900 hover:bg-blue-700 transition duration-300 rounded-lg hover:scale-105"
+            className="text-lg flex items-center gap-2 px-2 py-2 text-white bg-gray-900 hover:bg-blue-700 transition duration-300 rounded-lg hover:scale-105"
           >
             Let's Talk
             <ArrowBigUpDashIcon />

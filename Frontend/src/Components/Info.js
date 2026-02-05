@@ -35,12 +35,12 @@ function Info() {
           National University of Computer and Emerging sciences (FAST).
         </p>
         </motion.div>
-        <div className="p-6 flex justify-between">
-          <button className="bg-blue-600 text-white text-lg flex gap-2 font-poppins font-bold p-4 rounded-xl  transition-all duration-300 hover:scale-105">
+        <div className="p-2 m-2 gap-1 flex justify-between">
+          <button className="bg-blue-600 text-white text-lg flex gap-2 font-poppins font-bold p-2 rounded-xl  transition-all duration-300 hover:scale-105">
             <PhoneCall className="pt-1" />
             Book a call
           </button>
-          <button className="p-4 flex gap-2  rounded-xl border px-6 hover:text-white hover:bg-gray-900  transition-all duration-300 hover:scale-105"  onClick={copytoclipboard}> 
+          <button className="p-2 flex gap-2  rounded-xl border px-6 hover:text-white hover:bg-gray-900  transition-all duration-300 hover:scale-105"  onClick={copytoclipboard}> 
             <Copy />
             Copy Email
           </button>
