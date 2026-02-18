@@ -26,8 +26,8 @@ const WorksPage = () => {
             id: 2,
             title: "Baymax+",
             category: "fullstack",
-            description: "Doctor patient ",
-            tech: ["React", "Tailwind CSS", "Firebase"],
+            description: "Baymax+ is to improve healthcare workflow efficiency, reduce errors from manual records, and make healthcare more accessible and organized",
+            tech: ["React", "Tailwind CSS", "MongoDB","FastAPI","Node","Express"],
             image: Project3,
             liveLink: "https://github.com/yashalcoder/Baymax_frontend.git",
             githubLink: "https://github.com/yashalcoder/Baymax_frontend.git",
@@ -38,7 +38,7 @@ const WorksPage = () => {
             title: "Blog Management System",
             category: "frontend",
             description: "Dynamic blog platform with rich text editor and category management",
-            tech: ["React", "Tailwind CSS", "Firebase"],
+            tech: ["React", "Tailwind CSS"],
             image:Project2,
             liveLink: "https://blog-site-by-react-tailwindcss.vercel.app/",
             githubLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss.git",
@@ -97,7 +97,7 @@ const WorksPage = () => {
            
             image: "avatar2.jpg",
             rating: 3,
-            text: "Working with Yashal was a great experience.She completed the project ahead of schedule and the code quality was good. Will definitely work together again!",
+            text: "Working with Yashal was a good experience.She completed the project with efforts. Will definitely work together again!",
             date: "August 2025"
         },
        

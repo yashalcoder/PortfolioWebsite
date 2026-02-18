@@ -18,7 +18,7 @@ function About() {
               Hi, This is <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Yashal Rafique</span> 👋
             </h1>
             <p className="text-xl md:text-2xl font-poppins dark:text-white/90 text-gray-800">
-              I am a passionate <span className="font-semibold text-purple-400">Full-stack developer</span> 🖥️ having 1.5 year experience
+              I am a passionate <span className="font-semibold text-purple-400">Full-stack developer</span> 🖥️ having 1 year experience
             </p>
             <p className="text-base md:text-lg dark:text-white/70 text-gray-700 leading-relaxed">
               I love building user-friendly interfaces and solving real-world problems through code. 
@@ -39,7 +39,7 @@ function About() {
         {/* Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           <div className="text-center p-8 bg-white/10 dark:bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300">
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">1.5+</h2>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">1</h2>
             <p className="dark:text-white/60 text-gray-600 text-sm uppercase tracking-wider">Year of Experience</p>
           </div>
           <div className="text-center p-8 bg-white/10 dark:bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300">

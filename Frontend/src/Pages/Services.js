@@ -19,7 +19,7 @@ const ServicesPage = () => {
     const s = [
         { img: SDS, company: "Snow Dream Studio", date: "June-July 2023", mname: "React Developer", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
         { img: fast, company: "Freelance", date: "june25-august", mname: "Teacher Assistant (Object Oriented Programming)", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
-        { img: freelance, company: "Freelance Work", date: "June 2025-Present", mname: "Linux & Python", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
+        { img: freelance, company: "Freelance Work", date: "June 2025-Present", mname: "MERN stack developer", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
         { img: coursera, company: "Coursera Courses", date: "January 2023-Feb 2023", mname: "Front-end Course", viewLink: "https://www.coursera.org/account/accomplishments/verify/5BZDP267CP3H" },
     ]
     
