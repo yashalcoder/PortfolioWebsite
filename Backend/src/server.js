@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -15,15 +16,15 @@ app.post("/contact", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "yashalrafique@gmail.com",          
-      pass: "etdrfhecbmlsknzj",      
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   
   const mailOptions = {
     from: email,
-    to: "yashalrafique@gmail.com",
+    to: process.env.EMAIL_USER,
     subject: `Contact from ${name}: ${subject}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   };
