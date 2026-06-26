@@ -172,7 +172,7 @@ const WorksPage = () => {
                             >
                                 {/* Project Image */}
                                 <div className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center`}>
-                                    <img src={project.image}/>
+                                    <img src={project.image} alt="project img"/>
                                         
                                 </div>
 

@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.462fbd76.css",
+    "main.js": "/static/js/main.9659d128.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/project2.mp4": "/static/media/project2.f7e5ce5c6dbdbe0186c2.mp4",
+    "static/media/seo.mp4": "/static/media/seo.4902b4e3edc00b1901ec.mp4",
+    "static/media/project4.mp4": "/static/media/project4.e41d31ce544803c5ee57.mp4",
+    "static/media/project1.png": "/static/media/project1.eb50a7b5e14ff38ce02d.png",
+    "static/media/project2.png": "/static/media/project2.16236a3fd50f0a5769ce.png",
+    "static/media/project4.png": "/static/media/project4.d90844935b92d31803f7.png",
+    "static/media/project5.png": "/static/media/project5.4999ab811d7f0766886b.png",
+    "static/media/p.png": "/static/media/p.db074565cecc6fbb5836.png",
+    "static/media/project3.png": "/static/media/project3.f4b5a25e7146f430c59a.png",
+    "static/media/fastLogo.png": "/static/media/fastLogo.98200a22d0868b55c905.png",
+    "static/media/yash2.png": "/static/media/yash2.0f270e184cbd0b8bc6d0.png",
+    "static/media/teamCollab.jpg": "/static/media/teamCollab.83453423b98e843f1da4.jpg",
+    "static/media/logo.png": "/static/media/logo.09efa3762cff503ad1cd.png",
+    "static/media/freelance.png": "/static/media/freelance.3a31879445e8cd02c0e8.png",
+    "static/media/SDS.svg": "/static/media/SDS.eac3b50026704d7e57cfdcf84c1ebd3d.svg",
+    "index.html": "/index.html",
+    "main.462fbd76.css.map": "/static/css/main.462fbd76.css.map",
+    "main.9659d128.js.map": "/static/js/main.9659d128.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.462fbd76.css",
+    "static/js/main.9659d128.js"
+  ]
+}
