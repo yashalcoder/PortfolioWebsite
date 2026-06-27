@@ -11,71 +11,102 @@ const WorksPage = () => {
     const projects = [
         {
             id: 1,
-            title: "Milan Fashion",
-            category: "frontend",
-            description: "A complete fashion app with payment integration stripe",
-            tech: ["React", "Node.js", "MongoDB", "Stripe"],
-            image: Project1, // Replace with your image
-
-            liveLink: "https://milan-fashion-frotend.vercel.app/",
-            githubLink: "https://github.com/yashalcoder/milan-fashion_frotend.git",
-            color: "from-purple-500 to-pink-500"
-        },
-        
-        {
-            id: 2,
-            title: "Baymax+",
-            category: "fullstack",
-            description: "Baymax+ is to improve healthcare workflow efficiency, reduce errors from manual records, and make healthcare more accessible and organized",
-            tech: ["React", "Tailwind CSS", "MongoDB","FastAPI","Node","Express"],
+            title: "Baymax+ (Final Year Project)",
+            category: "ai",
+            description: "Bilingual AI healthcare platform integrating patient records, consultations, prescriptions, lab reports, and pharmacy services. Built NLP and RAG pipelines to transcribe Urdu/English consultations and extract clinical insights.",
+            tech: ["FastAPI", "NLP", "LLMs", "RAG", "MERN"],
             image: Project3,
             liveLink: "https://github.com/yashalcoder/Baymax_frontend.git",
             githubLink: "https://github.com/yashalcoder/Baymax_frontend.git",
-            color: "from-blue-500 to-cyan-500"
+            color: "from-violet-600 to-indigo-800"
         },
         {
             id: 2,
-            title: "Blog Management System",
-            category: "frontend",
-            description: "Dynamic blog platform with rich text editor and category management",
-            tech: ["React", "Tailwind CSS"],
-            image:Project2,
-            liveLink: "https://blog-site-by-react-tailwindcss.vercel.app/",
-            githubLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss.git",
-            color: "from-blue-500 to-cyan-500"
+            title: "Clinical RAG System (DiReCT)",
+            category: "ai",
+            description: "Developed a clinical RAG system on MIMIC-IV using TinyLlama and FAISS vector search, achieving 100% retrieval accuracy and zero hallucinations.",
+            tech: ["PyTorch", "FAISS", "LangChain", "TinyLlama"],
+            image: Project1,
+            liveLink: "https://github.com/yashalcoder",
+            githubLink: "https://github.com/yashalcoder",
+            color: "from-blue-600 to-indigo-800"
         },
-        // {
-        //     id: 3,
-        //     title: "Task Management API",
-        //     category: "backend",
-        //     description: "RESTful API for task management with authentication and authorization",
-        //     tech: ["Node.js", "Express", "PostgreSQL", "JWT"],
-        //     image: "project3.jpg",
-        //     liveLink: "https://example.com",
-        //     githubLink: "https://github.com/yashalcoder",
-        //     color: "from-green-500 to-emerald-500"
-        // },
+        {
+            id: 3,
+            title: "VLM Fine-Tuning for Doc-to-Markdown",
+            category: "ai",
+            description: "Fine-tuned a Vision Language Model using QLoRA for structured document understanding and markdown conversion, achieving 31.2 BLEU score.",
+            tech: ["PyTorch", "QLoRA", "PEFT", "VLM"],
+            image: Project5,
+            liveLink: "https://github.com/yashalcoder",
+            githubLink: "https://github.com/yashalcoder",
+            color: "from-emerald-600 to-teal-800"
+        },
         {
             id: 4,
-            title: "Doctor Dashboard",
-            category: "frontend",
-            description: "Real time appointment scheduler",
-            tech: ["React","tailwindcss"],
-            image: Poject4,
-            liveLink: "https://smart-appointmnet-sceduler.vercel.app/",
-            githubLink: "https://github.com/yashalcoder/smart-appointmnet-sceduler.git",
-            color: "from-orange-500 to-red-500"
+            title: "Urdu Conversational Chatbot",
+            category: "ai",
+            description: "Built a Transformer-based chatbot trained on 50K+ Urdu conversations using an encoder-decoder architecture with BLEU 24.5.",
+            tech: ["PyTorch", "Transformer", "Seq2Seq"],
+            image: Project2,
+            liveLink: "https://github.com/yashalcoder",
+            githubLink: "https://github.com/yashalcoder",
+            color: "from-purple-600 to-pink-800"
         },
-         {
+        {
             id: 5,
-            title: "Seo Crack",
+            title: "ContentRealm",
+            category: "fullstack",
+            description: "AI content automation platform that generates, schedules, and publishes social media posts across multiple networks from a single input.",
+            tech: ["Next.js", "FastAPI", "LLMs", "Celery"],
+            image: Project3,
+            liveLink: "https://github.com/yashalcoder",
+            githubLink: "https://github.com/yashalcoder",
+            color: "from-rose-600 to-orange-600"
+        },
+        {
+            id: 6,
+            title: "Task Manager",
+            category: "fullstack",
+            description: "A Trello-like collaborative Kanban workspace with board configurations, drag-and-drop tasks, real-time collaboration, and JWT auth.",
+            tech: ["MongoDB", "Express", "React", "Node.js"],
+            image: Project2,
+            liveLink: "https://github.com/yashalcoder",
+            githubLink: "https://github.com/yashalcoder",
+            color: "from-sky-600 to-blue-800"
+        },
+        {
+            id: 7,
+            title: "AI Chatbot & RAG System",
+            category: "ai",
+            description: "RAG-based chatbot using vector search and contextual retrieval to query private document repositories with high accuracy.",
+            tech: ["Python", "LangChain", "Hugging Face", "FAISS"],
+            image: Project1,
+            liveLink: "https://github.com/yashalcoder",
+            githubLink: "https://github.com/yashalcoder",
+            color: "from-indigo-600 to-purple-800"
+        },
+        {
+            id: 8,
+            title: "PDF Converter",
+            category: "fullstack",
+            description: "Asynchronous document conversion server supporting multiple extensions, clean REST APIs, and real-time conversion updates.",
+            tech: ["Next.js", "FastAPI", "Celery", "Redis"],
+            image: Poject4,
+            liveLink: "https://github.com/yashalcoder",
+            githubLink: "https://github.com/yashalcoder",
+            color: "from-teal-600 to-emerald-800"
+        },
+        {
+            id: 9,
+            title: "Blog Site",
             category: "frontend",
-            description: "",
-            tech: ["React","tailwindcss"],
-            image: Project5,
-            liveLink: "https://react-project-o69a1e8hn-yashalrafique-gmailcoms-projects.vercel.app/",
-            githubLink: "https://github.com/yashalcoder/ReactProject.git",
-            color: "from-orange-500 to-red-500"
+            description: "Fully responsive modern blog site designed with reusable component architecture, categories filtering, and optimized loading speeds.",
+            tech: ["React", "Tailwind CSS"],
+            image: Project2,
+            liveLink: "https://blog-site-by-react-tailwindcss.vercel.app/",
+            githubLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss.git",
+            color: "from-purple-500 to-pink-500"
         }
     ];
 
@@ -85,29 +116,28 @@ const WorksPage = () => {
             name: "Ali Haider",
             role: "Founder of",
             company: "Neurotank",
-            image: "avatar1.jpg", // Replace with your image
-            rating: 4,
-            text: "Yashal delivered exceptional work on our contentRealm platform. Her attention to create frontend from design good. recommended!",
+            image: "avatar1.jpg",
+            rating: 5,
+            text: "Yashal delivered exceptional work on our contentRealm platform. Her attention to detail and ability to translate complex design specs into responsive components was stellar.",
             date: "December 2025"
         },
         {
             id: 2,
             name: "Muneeb",
-            role: "Approach from linkdin",
-           
+            role: "Collaborator",
+            company: "LinkedIn client",
             image: "avatar2.jpg",
-            rating: 3,
-            text: "Working with Yashal was a good experience.She completed the project with efforts. Will definitely work together again!",
+            rating: 5,
+            text: "Working with Yashal was an absolute pleasure. She took ownership of the tasks, implemented clean code structures, and delivered ahead of schedule.",
             date: "August 2025"
-        },
-       
+        }
     ];
 
     const categories = [
         { id: 'all', name: 'All Projects' },
+        { id: 'ai', name: 'AI & Machine Learning' },
         { id: 'fullstack', name: 'Full Stack' },
-        { id: 'frontend', name: 'Frontend' },
-        { id: 'backend', name: 'Backend' }
+        { id: 'frontend', name: 'Frontend' }
     ];
 
     const filteredProjects = activeTab === 'all' 
@@ -274,7 +304,7 @@ const WorksPage = () => {
                         <p className="text-white/90 mb-6">
                             Have a project in mind? Let's create something amazing together.
                         </p>
-                        <a href="/contact">
+                        <a href="#/contact">
                             <button className="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg">
                                 Get In Touch →
                             </button>

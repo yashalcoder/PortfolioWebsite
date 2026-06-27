@@ -5,8 +5,11 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
+      sans: ["Plus Jakarta Sans", "sans-serif"],
+      heading: ["Bebas Neue", "sans-serif"],
+      serifHeading: ["Bodoni Moda", "serif"],
       robbin: ["Nerko One", "cursive"],
-      poppins: ["Poppins", "sans - serif"],
+      poppins: ["Plus Jakarta Sans", "sans-serif"],
     },
   },
   plugins: [],

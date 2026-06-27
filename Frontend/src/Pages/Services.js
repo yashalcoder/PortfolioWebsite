@@ -10,17 +10,34 @@ import coursera from "../images/coursera.png"
 
 const ServicesPage = () => {
     const services = [
-        { img: front, sname: "Front-End Development" },
-        { img: back, sname: "Backend Development" },
-        { img: back, sname: "Programming Assignments (C++)" },
-        { img: back, sname: "Linux Tasks" },
+        { img: back, sname: "AI & RAG Systems Integration" },
+        { img: back, sname: "LLM & VLM Fine-Tuning" },
+        { img: front, sname: "Full-Stack Web Apps (Next.js/React)" },
+        { img: back, sname: "Scalable REST APIs (FastAPI/Node)" },
     ]
     
     const s = [
-        { img: SDS, company: "Snow Dream Studio", date: "June-July 2023", mname: "React Developer", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
-        { img: fast, company: "Freelance", date: "june25-august", mname: "Teacher Assistant (Object Oriented Programming)", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
-        { img: freelance, company: "Freelance Work", date: "June 2025-Present", mname: "MERN stack developer", viewLink: "https://github.com/yashalcoder/Blog-Site-By-React-Tailwindcss" },
-        { img: coursera, company: "Coursera Courses", date: "January 2023-Feb 2023", mname: "Front-end Course", viewLink: "https://www.coursera.org/account/accomplishments/verify/5BZDP267CP3H" },
+        { 
+            img: SDS, 
+            company: "Snow Dream Studio", 
+            date: "Feb 2026 – Jun 2026", 
+            mname: "MERN Stack Developer", 
+            desc: "Developed and maintained full-stack web applications using MongoDB, Express.js, React, and Node.js. Built reusable React components and Next.js pages with optimized performance and responsive layouts."
+        },
+        { 
+            img: freelance, 
+            company: "Freelance", 
+            date: "Sep 2025 – Nov 2025", 
+            mname: "Backend Developer (FastAPI)", 
+            desc: "Designed and developed scalable REST APIs using FastAPI and integrated AI-powered backend services. Optimized API performance, testing workflows, and deployment processes."
+        },
+        { 
+            img: SDS, 
+            company: "Snow Dream Studio", 
+            date: "Jul 2023 – Sep 2023", 
+            mname: "Frontend Intern", 
+            desc: "Converted Figma designs into responsive React components and improved frontend usability and performance."
+        }
     ]
     
     return (
@@ -37,7 +54,7 @@ const ServicesPage = () => {
                         <h1 className="font-bold text-4xl md:text-5xl font-poppins">
                             Services I <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Offered</span>
                         </h1>
-                        <a href="/contact">
+                        <a href="#/contact">
                             <div className="rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-purple-500 to-pink-500 text-white cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg">
                                 <h1>Available for Hire</h1>
                             </div>
@@ -73,10 +90,9 @@ const ServicesPage = () => {
                         {s.map((data, index) => (
                             <div 
                                 key={index} 
-                                className="bg-white/10 dark:bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300 overflow-hidden group"
+                                className="bg-white/10 dark:bg-white/5 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300 overflow-hidden group p-6"
                             >
-                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-6 items-center">
-                                    
+                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200/10 pb-4 mb-3">
                                     {/* Company Info */}
                                     <div className="flex items-center gap-4">
                                         <div className="w-14 h-14 bg-white/20 dark:bg-white/10 rounded-xl p-2 flex items-center justify-center flex-shrink-0">
@@ -89,24 +105,14 @@ const ServicesPage = () => {
                                     </div>
                                     
                                     {/* Role */}
-                                    <div className="lg:text-center">
-                                        <h3 className="font-semibold text-purple-400">{data.mname}</h3>
+                                    <div>
+                                        <h3 className="font-semibold text-purple-400 text-lg md:text-right">{data.mname}</h3>
                                     </div>
-                                    
-                                    {/* View Button */}
-                                    {/* <div className="lg:flex lg:justify-end">
-                                        <a 
-                                            href={data.viewLink} 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            className="inline-block"
-                                        >
-                                            <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2.5 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg text-center">
-                                                View Project →
-                                            </div>
-                                        </a>
-                                    </div> */}
                                 </div>
+                                {/* Description */}
+                                <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                                    {data.desc}
+                                </p>
                             </div>
                         ))}
                     </div>

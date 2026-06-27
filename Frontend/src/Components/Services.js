@@ -7,10 +7,10 @@ import { ArrowBigRight, Link } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 function Services() {
     const services=[
-        {img:front,sname:"Front-End Development"},
-        {img:back,sname:"Backend Development"},
-        {img:back,sname:"Programming Assignments (C++)"},
-        {img:back,sname:"Linux Tasks"},
+        {img:back,sname:"AI & RAG Systems Integration"},
+        {img:back,sname:"LLM & VLM Fine-Tuning"},
+        {img:front,sname:"Full-Stack Web Apps (Next.js/React)"},
+        {img:back,sname:"Scalable REST APIs (FastAPI/Node)"},
       ]
   return (
     <div>

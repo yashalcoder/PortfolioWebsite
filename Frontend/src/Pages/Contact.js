@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Info from "../Components/Info";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,7 @@ const Contact = () => {
       const result = await res.json();
 
       if (result.success) {
-        alert("Message sent successfully");
+        toast.success("Message sent successfully");
         setFormData({
           name: "",
           email: "",
@@ -38,11 +39,11 @@ const Contact = () => {
           budget: ""
         });
       } else {
-        alert("Failed to send message");
+        toast.error("Failed to send message");
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      alert("An error occurred");
+      toast.error("An error occurred");
     }
   };
 
