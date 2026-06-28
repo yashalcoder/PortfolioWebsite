@@ -40,10 +40,10 @@ function Info() {
   return (
     <div className="h-full flex flex-col justify-between p-6">
       <div>
-        <div className="relative group overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mb-6 flex justify-center items-center p-2">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+        <div className=" group overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mb-6 flex justify-center items-center p-2">
+          <div className=" -inset-0.5 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
           <img 
-            className="relative rounded-xl w-full object-cover max-h-[300px] transition duration-300 group-hover:scale-105" 
+            className=" rounded-xl w-full object-cover max-h-[300px] transition duration-300 group-hover:scale-105" 
             src={DeveloperAvatar} 
             alt="Yashal Rafique - Web & AI Engineer" 
           />
