@@ -56,16 +56,16 @@ const Contact = () => {
         <h1 className="text-3xl font-bold">
           Let's 👋 <span className="text-blue-900">Work</span> Together
         </h1>
-        <div className="bg-gray-200  dark:bg-gray-900 p-14 mt-6 rounded-lg">
+        <div className="bg-gray-200  dark:bg-gray-900 p-5 mt-6 rounded-lg">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col  md:flex-row gap-4">
               <input name="name" onChange={handleChange} value={formData.name} placeholder="Name" className="w-full p-2 rounded dark:bg-black text-white border" />
               <input name="email" onChange={handleChange} value={formData.email} placeholder="Email" className="w-full p-2 rounded dark:bg-black text-white border" />
             </div>
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4 " >
               <input name="subject" onChange={handleChange} value={formData.subject} placeholder="Subject" className="w-full p-2 rounded dark:bg-black text-white border" />
               <select name="budget" onChange={handleChange} value={formData.budget} className="w-full p-2 rounded dark:bg-black text-gray-600  border">
-                <option value="">Select budget...</option>
+                <option  value="">Select budget...</option>
                 <option>$100 - $500</option>
                 <option>$500 - $1000</option>
               </select>

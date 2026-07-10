@@ -5,6 +5,9 @@ import Project2 from "../images/project2.png"
 import Project3 from "../images/project3.png"
 import Poject4 from "../images/project4.png"
 import Project5 from "../images/project5.png"
+import Project10 from "../images/project10.png"
+import ContentRealm from "../images/contentRealm.png"
+import RAG from "../images/RAG.png"
 const WorksPage = () => {
     const [activeTab, setActiveTab] = useState('all');
 
@@ -16,74 +19,85 @@ const WorksPage = () => {
             description: "Bilingual AI healthcare platform integrating patient records, consultations, prescriptions, lab reports, and pharmacy services. Built NLP and RAG pipelines to transcribe Urdu/English consultations and extract clinical insights.",
             tech: ["FastAPI", "NLP", "LLMs", "RAG", "MERN"],
             image: Project3,
-            liveLink: "https://github.com/yashalcoder/Baymax_frontend.git",
-            githubLink: "https://github.com/yashalcoder/Baymax_frontend.git",
+            liveLink: "https://baymax-frontend-zeta.vercel.app",
+            githubLink: "https://github.com/yashalcoder/Baymax_fastapi_backend",
             color: "from-violet-600 to-indigo-800"
         },
         {
-            id: 2,
-            title: "Clinical RAG System (DiReCT)",
-            category: "ai",
-            description: "Developed a clinical RAG system on MIMIC-IV using TinyLlama and FAISS vector search, achieving 100% retrieval accuracy and zero hallucinations.",
-            tech: ["PyTorch", "FAISS", "LangChain", "TinyLlama"],
-            image: Project1,
-            liveLink: "https://github.com/yashalcoder",
-            githubLink: "https://github.com/yashalcoder",
-            color: "from-blue-600 to-indigo-800"
-        },
-        {
-            id: 3,
-            title: "VLM Fine-Tuning for Doc-to-Markdown",
-            category: "ai",
-            description: "Fine-tuned a Vision Language Model using QLoRA for structured document understanding and markdown conversion, achieving 31.2 BLEU score.",
-            tech: ["PyTorch", "QLoRA", "PEFT", "VLM"],
-            image: Project5,
-            liveLink: "https://github.com/yashalcoder",
-            githubLink: "https://github.com/yashalcoder",
-            color: "from-emerald-600 to-teal-800"
-        },
-        {
-            id: 4,
-            title: "Urdu Conversational Chatbot",
-            category: "ai",
-            description: "Built a Transformer-based chatbot trained on 50K+ Urdu conversations using an encoder-decoder architecture with BLEU 24.5.",
-            tech: ["PyTorch", "Transformer", "Seq2Seq"],
-            image: Project2,
-            liveLink: "https://github.com/yashalcoder",
-            githubLink: "https://github.com/yashalcoder",
-            color: "from-purple-600 to-pink-800"
-        },
+    id: 2,
+    title: "Milan Fashion",
+    category: "frontend",
+    description: "Developed a modern and responsive fashion e-commerce frontend with Next.js, React, Tailwind CSS, and Framer Motion, featuring smooth animations, intuitive navigation, and a clean user experience.",
+    tech: ["next.js", "tailwindcss", "react", "framer-motion"],
+    image: Project1,
+    liveLink: "https://milan-fashion-frotend.vercel.app/",
+    githubLink: "https://github.com/yashalcoder/milan-fashion_frotend",
+    color: "from-blue-600 to-indigo-800"
+},
+        // {
+        //     id: 2,
+        //     title: "Clinical RAG System (DiReCT)",
+        //     category: "ai",
+        //     description: "Developed a clinical RAG system on MIMIC-IV using TinyLlama and FAISS vector search, achieving 100% retrieval accuracy and zero hallucinations.",
+        //     tech: ["PyTorch", "FAISS", "LangChain", "TinyLlama"],
+        //     image: Project1,
+        //     liveLink: "https://github.com/yashalcoder",
+        //     githubLink: "https://github.com/yashalcoder",
+        //     color: "from-blue-600 to-indigo-800"
+        // },
+        // {
+        //     id: 3,
+        //     title: "VLM Fine-Tuning for Doc-to-Markdown",
+        //     category: "ai",
+        //     description: "Fine-tuned a Vision Language Model using QLoRA for structured document understanding and markdown conversion, achieving 31.2 BLEU score.",
+        //     tech: ["PyTorch", "QLoRA", "PEFT", "VLM"],
+        //     image: Project5,
+        //     liveLink: "https://github.com/yashalcoder",
+        //     githubLink: "https://github.com/yashalcoder",
+        //     color: "from-emerald-600 to-teal-800"
+        // },
+        // {
+        //     id: 4,
+        //     title: "Urdu Conversational Chatbot",
+        //     category: "ai",
+        //     description: "Built a Transformer-based chatbot trained on 50K+ Urdu conversations using an encoder-decoder architecture with BLEU 24.5.",
+        //     tech: ["PyTorch", "Transformer", "Seq2Seq"],
+        //     image: Project2,
+        //     liveLink: "https://github.com/yashalcoder",
+        //     githubLink: "https://github.com/yashalcoder",
+        //     color: "from-purple-600 to-pink-800"
+        // },
         {
             id: 5,
             title: "ContentRealm",
             category: "fullstack",
             description: "AI content automation platform that generates, schedules, and publishes social media posts across multiple networks from a single input.",
-            tech: ["Next.js", "FastAPI", "LLMs", "Celery"],
-            image: Project3,
-            liveLink: "https://github.com/yashalcoder",
-            githubLink: "https://github.com/yashalcoder",
+            tech: ["Next.js", "FastAPI", "LLMs"],
+            image: ContentRealm,
+            liveLink: "https://content-real-m.vercel.app",
+            githubLink: "https://github.com/yashalcoder/ContentRealBackend",
             color: "from-rose-600 to-orange-600"
         },
-        {
-            id: 6,
-            title: "Task Manager",
-            category: "fullstack",
-            description: "A Trello-like collaborative Kanban workspace with board configurations, drag-and-drop tasks, real-time collaboration, and JWT auth.",
-            tech: ["MongoDB", "Express", "React", "Node.js"],
-            image: Project2,
-            liveLink: "https://github.com/yashalcoder",
-            githubLink: "https://github.com/yashalcoder",
-            color: "from-sky-600 to-blue-800"
-        },
+        // {
+        //     id: 6,
+        //     title: "Task Manager",
+        //     category: "fullstack",
+        //     description: "A Trello-like collaborative Kanban workspace with board configurations, drag-and-drop tasks, real-time collaboration, and JWT auth.",
+        //     tech: ["MongoDB", "Express", "React", "Node.js"],
+        //     image: Project2,
+        //     liveLink: "https://github.com/yashalcoder",
+        //     githubLink: "https://github.com/yashalcoder",
+        //     color: "from-sky-600 to-blue-800"
+        // },
         {
             id: 7,
             title: "AI Chatbot & RAG System",
             category: "ai",
             description: "RAG-based chatbot using vector search and contextual retrieval to query private document repositories with high accuracy.",
             tech: ["Python", "LangChain", "Hugging Face", "FAISS"],
-            image: Project1,
-            liveLink: "https://github.com/yashalcoder",
-            githubLink: "https://github.com/yashalcoder",
+            image: RAG,
+            liveLink: "https://github.com/yashalcoder/RAG",
+            githubLink: "https://github.com/yashalcoder/RAG",
             color: "from-indigo-600 to-purple-800"
         },
         {
@@ -91,10 +105,10 @@ const WorksPage = () => {
             title: "PDF Converter",
             category: "fullstack",
             description: "Asynchronous document conversion server supporting multiple extensions, clean REST APIs, and real-time conversion updates.",
-            tech: ["Next.js", "FastAPI", "Celery", "Redis"],
-            image: Poject4,
-            liveLink: "https://github.com/yashalcoder",
-            githubLink: "https://github.com/yashalcoder",
+            tech: ["Next.js", "FastAPI"],
+            image: Project10,
+            liveLink: "http://convertion-frontend-yxwa.vercel.app",
+            githubLink: "https://github.com/yashalcoder/Convertion_Backend",
             color: "from-teal-600 to-emerald-800"
         },
         {
@@ -135,9 +149,9 @@ const WorksPage = () => {
 
     const categories = [
         { id: 'all', name: 'All Projects' },
-        { id: 'ai', name: 'AI & Machine Learning' },
-        { id: 'fullstack', name: 'Full Stack' },
-        { id: 'frontend', name: 'Frontend' }
+        // { id: 'ai', name: 'AI & Machine Learning' },
+        // { id: 'fullstack', name: 'Full Stack' },
+        // { id: 'frontend', name: 'Frontend' }
     ];
 
     const filteredProjects = activeTab === 'all' 
