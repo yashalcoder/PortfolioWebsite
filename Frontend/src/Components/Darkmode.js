@@ -17,10 +17,21 @@ export default function Darkmode (){
       
     }
     useEffect(()=>{
-        const savedTheme=localStorage.getItem("theme")=="dark";
-        setIsDark(savedTheme);
-        document.documentElement.classList.toggle("dark",savedTheme);
-    },[]);
+    const savedTheme = localStorage.getItem("theme");
+
+    if(savedTheme){
+        const dark = savedTheme === "dark";
+        setIsDark(dark);
+        document.documentElement.classList.toggle("dark", dark);
+    }
+    else{
+        // default dark mode
+        setIsDark(true);
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme","dark");
+    }
+
+},[]);
     
     return(
         
